@@ -1,6 +1,6 @@
 # 🌐 Language Translation Chatbot using AWS
 
-![Chatbot Preview](https://your-screenshot-url.com/preview.png)
+![Chatbot Preview](LanguageTranslatorChatbot/TranslatorPIC.png)
 <!-- Replace the above URL with an actual screenshot of your chatbot interface -->
 
 [![AWS](https://img.shields.io/badge/AWS-Translate-orange?logo=amazon-aws)](https://aws.amazon.com/translate/)
@@ -94,7 +94,7 @@ Set Permissions:
 
 Ensure the Lambda function has permissions to use Amazon Translate.
 
-3.** API Gateway (Trigger Lambda)**
+3.**API Gateway (Trigger Lambda)**
 
 - Create a HTTP API:
 
@@ -109,6 +109,7 @@ Ensure the Lambda function has permissions to use Amazon Translate.
 - Note the Invoke URL.
 
 4. **Connect Frontend to API**
+
 In your script.js, replace the API URL placeholder with your deployed API Gateway invoke URL:
 const API_URL = ''; #Replace with your API URL
 
@@ -135,4 +136,8 @@ Output: Bonjour, comment ça va ? or Bonjour, comment allez-vous ?
 
 - Add chatbot flow using Amazon Lex.
 
+## 🧑‍💻 Author
+
+**Saichandu Anukonti.**  
+GitHub: [Saichandu51](https://github.com/Saichandu51)
 
