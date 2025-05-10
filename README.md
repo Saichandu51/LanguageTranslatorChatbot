@@ -26,7 +26,12 @@
 - ☁️ Static website hosting using Amazon S3.
 
 ---
+## 🚀 Architecture Diagram
 
+![Architecture Preview](language.png)
+
+
+---
 ## 🧰 Tech Stack
 
 | Component      | Technology Used              |
