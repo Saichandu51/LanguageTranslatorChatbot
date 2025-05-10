@@ -90,11 +90,11 @@ language-translation-chatbot/
            'headers': { "Access-Control-Allow-Origin": "*" },
            'body': json.dumps({ 'translatedText': result['TranslatedText'] })
        }
-  3. Set Permissions:
+3.  **Set Permissions:**
 
      Ensure the Lambda function has permissions to use Amazon Translate.
 
-3.**API Gateway (Trigger Lambda)**
+## 3.API Gateway (Trigger Lambda)
 
 - Create a HTTP API:
 
@@ -108,7 +108,7 @@ language-translation-chatbot/
 
 - Note the Invoke URL.
 
-4. **Connect Frontend to API**
+## 4. Connect Frontend to API
 
 - In your script.js, replace the API URL placeholder with your deployed API Gateway invoke URL:
 - const API_URL = '**API URL**';   **Replace with your API URL**
