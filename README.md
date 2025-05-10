@@ -42,10 +42,10 @@
 ## 📁 Project Structure
 
 language-translation-chatbot/
-├── index.html # Main UI
-├── styles.css # Styling for chatbot
-├── script.js # JavaScript logic to handle input/output and API call
-├── lambda_function.py # AWS Lambda function code
+- ├── index.html # Main UI
+- ├── styles.css # Styling for chatbot
+- ├── script.js # JavaScript logic to handle input/output and API call
+- ├── lambda_function.py # AWS Lambda function code
 
 ---
 
@@ -90,9 +90,9 @@ language-translation-chatbot/
            'headers': { "Access-Control-Allow-Origin": "*" },
            'body': json.dumps({ 'translatedText': result['TranslatedText'] })
        }
-Set Permissions:
+  3. Set Permissions:
 
-Ensure the Lambda function has permissions to use Amazon Translate.
+     Ensure the Lambda function has permissions to use Amazon Translate.
 
 3.**API Gateway (Trigger Lambda)**
 
@@ -110,17 +110,17 @@ Ensure the Lambda function has permissions to use Amazon Translate.
 
 4. **Connect Frontend to API**
 
-In your script.js, replace the API URL placeholder with your deployed API Gateway invoke URL:
-const API_URL = ''; #Replace with your API URL
+- In your script.js, replace the API URL placeholder with your deployed API Gateway invoke URL:
+- const API_URL = '**API URL**';   **Replace with your API URL**
 
 ## 💬 Example Usage
-Input: Hello, how are you?
+- Input: Hello, how are you?
 
-Select Language: French
+- Select Language: French
 
-Click Translate
+- Click Translate
 
-Output: Bonjour, comment ça va ? or Bonjour, comment allez-vous ?
+- Output: Bonjour, comment ça va ? or Bonjour, comment allez-vous ?
 
 ## 🔒 Security Notes
 - Ensure no secret keys are exposed in frontend code.
