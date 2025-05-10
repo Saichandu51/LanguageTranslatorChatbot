@@ -1,6 +1,6 @@
 # 🌐 Language Translation Chatbot using AWS
 
-![Chatbot Preview](LanguageTranslatorChatbot/TranslatorPIC.png)
+![Chatbot Preview](TranslatorPIC.png)
 <!-- Replace the above URL with an actual screenshot of your chatbot interface -->
 
 [![AWS](https://img.shields.io/badge/AWS-Translate-orange?logo=amazon-aws)](https://aws.amazon.com/translate/)
