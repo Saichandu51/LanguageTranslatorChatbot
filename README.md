@@ -19,7 +19,7 @@
 
 ## 🚀 Features
 
-- 🌍 Translate text into multiple languages using Amazon Translate.
+- 🌍 Translate text into multiple languages.
 - 💬 User-friendly chatbot interface for seamless interaction.
 - ⚡ Serverless backend powered by AWS Lambda.
 - 🔗 Secure and scalable API integration via Amazon API Gateway.
@@ -94,44 +94,45 @@ Set Permissions:
 
 Ensure the Lambda function has permissions to use Amazon Translate.
 
-3. API Gateway (Trigger Lambda)
-Create a REST API:
+3.** API Gateway (Trigger Lambda)**
 
-Add a POST method and integrate it with your Lambda function.
+- Create a HTTP API:
 
-Enable CORS:
+- Add a POST method and integrate it with your Lambda function.
 
-To allow cross-origin requests from your frontend.
+- Enable CORS:
 
-Deploy the API:
+- To allow cross-origin requests from your frontend.
 
-Note the Invoke URL.
+- Deploy the API:
 
-4. Connect Frontend to API
+- Note the Invoke URL.
+
+4. **Connect Frontend to API**
 In your script.js, replace the API URL placeholder with your deployed API Gateway invoke URL:
 const API_URL = ''; #Replace with your API URL
 
-💬 Example Usage
+## 💬 Example Usage
 Input: Hello, how are you?
 
 Select Language: French
 
 Click Translate
 
-Output: Bonjour, comment ça va ?
+Output: Bonjour, comment ça va ? or Bonjour, comment allez-vous ?
 
-🔒 Security Notes
-Ensure no secret keys are exposed in frontend code.
+## 🔒 Security Notes
+- Ensure no secret keys are exposed in frontend code.
 
-Use IAM roles and resource-based policies for secure Lambda and API access.
+- Use IAM roles and resource-based policies for secure Lambda and API access.
 
-Consider adding throttling or usage limits in API Gateway for public-facing APIs.
+- Consider adding throttling or usage limits in API Gateway for public-facing APIs.
 
-📌 Future Enhancements
-Add language detection and selection dynamically.
+## 📌 Future Enhancements
+- Add language detection and selection dynamically.
 
-Integrate Amazon Polly for voice output.
+- Integrate Amazon Polly for voice output.
 
-Add chatbot flow using Amazon Lex.
+- Add chatbot flow using Amazon Lex.
 
 
